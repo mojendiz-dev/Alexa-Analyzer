@@ -18,7 +18,6 @@ def lambda_handler(event, context):
     
     return 'End of News Sentiment IOT function'
 
-
 def deleteNews():
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('news')
@@ -35,7 +34,7 @@ def deleteNews():
                 'timestamp':timestamp
                     }
                     ) 
-
+# Actualizacion de lambda
 def findNews():
     #News credit to newsapi.org
     #Fetch headlines using the API
